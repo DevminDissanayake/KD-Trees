@@ -1,6 +1,4 @@
-//Name - Devmin Dissanayake
-//ID - 260796603
-//package assignments2019.a3posted;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 public class KDTree implements Iterable<Datum>{ 
@@ -91,7 +89,7 @@ public class KDTree implements Iterable<Datum>{
 			 *  the above fields.
 			 */
 
-			//   ADD YOUR CODE BELOW HERE
+		 
 
 			ArrayList<Datum> lowDatalist = new ArrayList<Datum>();	// the low data set we will put as temporary
 			ArrayList<Datum> highDatalist = new ArrayList<Datum>();	// the high data set we will put as temporary
@@ -173,12 +171,11 @@ public class KDTree implements Iterable<Datum>{
 				highChild = new KDNode(highDataListArray);
 			}
 
-			//   ADD YOUR CODE ABOVE HERE
 		}
 
 		public Datum nearestPointInNode(Datum queryPoint) {
 			Datum nearestPoint, nearestPoint_otherSide;
-			//   ADD YOUR CODE BELOW HERE
+
 
 			double qpTosplit,npToQp,npoToQp;
 			double difNpToQp=0 ,difNpoToQp = 0;
@@ -234,7 +231,6 @@ public class KDTree implements Iterable<Datum>{
 				}
 			}
 
-			//   ADD YOUR CODE ABOVE HERE
 		}
 		
 		// -----------------  KDNode helper methods (might be useful for debugging) -------------------
@@ -291,7 +287,7 @@ public class KDTree implements Iterable<Datum>{
 	}
 	
 	private class KDTreeIterator implements Iterator<Datum> {
-		//   ADD YOUR CODE BELOW HERE
+		
 
 		public ArrayList<KDNode> stack = new ArrayList<KDNode>();
 
@@ -332,7 +328,6 @@ public class KDTree implements Iterable<Datum>{
 			}
 		}
 
-		//   ADD YOUR CODE ABOVE HERE
 	}
 
 }
